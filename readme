@@ -1,0 +1,22 @@
+Prepare: 
+- must have to have JDK installed in your machine
+- must have python 3.7 or higher. check python version "python3 --version"
+- install cryptography "pip3 install cryptography"
+- install paramiko "pip3 install paramiko"
+- files in "record" folder are used to test the program
+
+- Note: in theory, it program should work with any pair of n and k. However, there are flaws in my Main.java file. Recommended pair of n and k (5,2), (6,2), (5,4), (6,4)
+
+Instruction:
+
+- Open your Virtual Machines to get their IP Address and place them in "insert_IP.xlsx"
+
+- Split Fill: Encryption + Encode + Send Files to Virtual Machines
+command: python3 crypto.py encryption file_name n k
+
+
+- Recover the Fill: Get Files back from Virtual Machines
+command: python3 crypto.py decryption file_name.encrypted n k
+
+
+Live Demo: https://www.youtube.com/watch?v=OhiGJTXS4sA&ab_channel=HuongVo
